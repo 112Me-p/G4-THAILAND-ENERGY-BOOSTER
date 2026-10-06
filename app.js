@@ -70,7 +70,7 @@
     $$('[data-add]').forEach(b=>{if(!b.closest('#productGrid'))b.onclick=()=>{addItem(b.dataset.add);openCart()}});
     ['#openCartTop','#openCartBottom','#mobileCart'].forEach(s=>$(s)?.addEventListener('click',openCart));$('#closeCart').onclick=closeCart;$('#drawerBackdrop').onclick=closeCart;
     $('#copyOrder').onclick=async()=>{const txt=orderText();try{await navigator.clipboard.writeText(txt);toast('คัดลอกออเดอร์แล้ว')}catch{prompt('คัดลอกข้อความนี้',txt)}};
-    $('#lineOrder').onclick=async()=>{if(!state.cart.length){toast('เลือกสินค้าก่อน');return}const txt=orderText();try{await navigator.clipboard.writeText(txt)}catch{}window.open(`https://line.me/R/oaMessage/@g4thailand/?${encodeURIComponent(txt)}`,'_blank')};
+    $('#lineOrder').onclick=async()=>{if(!state.cart.length){toast('เลือกสินค้าก่อน');return}const txt=orderText();try{await navigator.clipboard.writeText(txt)}catch{}window.open(`https://line.me/R/oaMessage/%40961hneoj/?${encodeURIComponent(txt)}`,'_blank')};
     $('#menuToggle').onclick=toggleMobileNav;
     document.addEventListener('keydown',e=>{if(e.key==='Escape'){closeCart();closeMobileNav()}});
   }

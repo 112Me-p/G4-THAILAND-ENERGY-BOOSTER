@@ -10,6 +10,6 @@ Static GitHub Pages-ready front end based on the Klab-Ban interaction flow, rede
 - Cart supports products with confirmed prices plus quote-only products.
 - Bird food 100 g is currently set to “สอบถามราคา” because no confirmed selling price was supplied.
 - Shipping remains 30 THB/order based on supplied brand materials.
-- Order handoff opens LINE Official @g4thailand.
+- Order handoff opens LINE Official @961hneoj.
 
 No ZIP has been created.
