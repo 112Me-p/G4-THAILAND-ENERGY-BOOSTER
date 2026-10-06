@@ -78,6 +78,6 @@
   function toggleMobileNav(){const n=$('#mobileNav'),b=$('#menuToggle'),open=!n.classList.contains('open');n.classList.toggle('open',open);n.setAttribute('aria-hidden',String(!open));b.setAttribute('aria-expanded',String(open));b.textContent=open?'×':'☰'}
   function closeMobileNav(){const n=$('#mobileNav'),b=$('#menuToggle');n.classList.remove('open');n.setAttribute('aria-hidden','true');b.setAttribute('aria-expanded','false');b.textContent='☰'}
 
-  function init(){renderProducts();renderCart();bind();setupSystem();setupHeroParallax();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js').catch(()=>{})}
+  function init(){renderProducts();renderCart();bind();setupSystem();setupHeroParallax();if('serviceWorker'in navigator)navigator.serviceWorker.register('./sw.js',{updateViaCache:'none'}).then(r=>r.update()).catch(()=>{})}
   document.addEventListener('DOMContentLoaded',init);
 })();
