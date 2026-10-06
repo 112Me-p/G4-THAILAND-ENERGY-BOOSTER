@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="th">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover" />
+  <meta name="theme-color" content="#08090b" />
+  <meta name="description" content="G4 Thailand — Energy Booster, G4-X และโภชนาการสำหรับนกกรงหัวจุก" />
+  <title>G4 Thailand — Energy Booster</title>
+  <link rel="manifest" href="manifest.webmanifest" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+
+  <header class="topbar">
+    <a class="brand" href="#top" aria-label="G4 Thailand หน้าแรก">
+      <img src="assets/g4-logo.webp" alt="G4 Thailand" />
+      <span><strong>G4 THAILAND</strong><small>ENERGY BOOSTER</small></span>
+    </a>
+    <nav class="nav" id="mainNav" aria-label="เมนูหลัก">
+      <button data-scroll="#products">ผลิตภัณฑ์</button>
+      <button data-scroll="#performance">G4 Performance</button>
+      <button data-scroll="#system">วิธีเลือกใช้</button>
+      <button data-scroll="#gallery">G4 In Action</button>
+    </nav>
+    <button class="cart-button" id="openCartTop">ตะกร้า <span id="cartCountTop">0</span></button>
+    <button class="menu-toggle" id="menuToggle" aria-label="เปิดเมนู" aria-expanded="false">☰</button>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <button data-scroll="#products">ผลิตภัณฑ์</button>
+    <button data-scroll="#performance">G4 Performance</button>
+    <button data-scroll="#system">วิธีเลือกใช้</button>
+    <button data-scroll="#gallery">G4 In Action</button>
+  </div>
+
+  <main id="top">
+    <section class="hero" aria-labelledby="heroTitle">
+      <div class="hero-grid" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-a" aria-hidden="true"></div>
+      <div class="hero-glow hero-glow-b" aria-hidden="true"></div>
+      <div class="hero-rooster" aria-hidden="true"></div>
+
+      <div class="hero-copy">
+        <span class="eyebrow"><i></i> G4 THAILAND / PERFORMANCE SERIES</span>
+        <h1 id="heroTitle"><span>ENERGY</span><br><em>BOOSTER</em></h1>
+        <p>ผลิตภัณฑ์สำหรับคนเลี้ยงนกที่จริงจัง ตั้งแต่การดูแลประจำวัน การเตรียมความพร้อมก่อนแข่งขัน ไปจนถึงพื้นฐานด้านโภชนาการ</p>
+        <div class="hero-actions">
+          <button class="btn red" data-scroll="#products">ดูผลิตภัณฑ์ <b>→</b></button>
+          <button class="btn ghost" data-scroll="#system">เลือกสูตรให้เหมาะ</button>
+        </div>
+        <div class="hero-stats">
+          <div><small>DAILY CARE</small><strong>15 / 50 ML</strong></div>
+          <div><small>COMPETITION</small><strong>G4-X 20 ML</strong></div>
+          <div><small>NUTRITION</small><strong>100 G</strong></div>
+        </div>
+      </div>
+
+      <div class="hero-stage" aria-label="ผลิตภัณฑ์ G4">
+        <div class="orbit orbit-a" aria-hidden="true"></div>
+        <div class="orbit orbit-b" aria-hidden="true"></div>
+        <div class="float-product product-15">
+          <span>DAILY / 15 ML</span>
+          <img src="assets/hero-g4-15.png" alt="G4 Energy Booster สูตรเลี้ยง 15 ml" />
+        </div>
+        <div class="float-product product-50">
+          <span>DAILY / 50 ML</span>
+          <img src="assets/hero-g4-50.png" alt="G4 Energy Booster สูตรเลี้ยง 50 ml" />
+        </div>
+        <div class="float-product product-x">
+          <span>COMPETITION / 20 ML</span>
+          <img src="assets/hero-g4x-20.png" alt="G4-X Fighting 20 ml" />
+        </div>
+        <div class="hero-floor" aria-hidden="true"></div>
+      </div>
+      <div class="hero-mark" aria-hidden="true">G4</div>
+      <div class="scroll-note">SCROLL TO EXPLORE <span>↓</span></div>
+    </section>
+
+    <section class="quick section" aria-labelledby="quickTitle">
+      <div class="section-heading split">
+        <div>
+          <span class="eyebrow dark"><i></i> CHOOSE YOUR G4</span>
+          <h2 id="quickTitle" class="thai-display">เลือกจาก<br><em>เป้าหมายการใช้</em></h2>
+        </div>
+        <p>เลือกแบบเร็วตามช่วงการใช้งาน ระบบจะเพิ่มสินค้าลงตะกร้าให้ทันที และสามารถแก้จำนวนหรือลบรายการได้ภายหลัง</p>
+      </div>
+      <div class="quick-grid">
+        <button class="quick-card" data-preset="trial"><span>01 / เริ่มทดลอง</span><strong>G4 สูตรเลี้ยง</strong><small>ขนาดทดลอง 15 ml</small><b>190.-</b></button>
+        <button class="quick-card red-card" data-preset="daily"><span>02 / ใช้ประจำ</span><strong>G4 สูตรเลี้ยง</strong><small>ขนาดใหญ่ 50 ml</small><b>490.-</b></button>
+        <button class="quick-card dark-card" data-preset="fight"><span>03 / ก่อนแข่งขัน</span><strong>G4-X</strong><small>สูตรเร่งร้อง 20 ml</small><b>590.-</b></button>
+        <button class="quick-card food-card" data-scroll="#products"><span>04 / โภชนาการ</span><strong>อาหารนกกรงหัวจุก</strong><small>สูตรนกแข่ง 100 กรัม</small><b>ดูสินค้า →</b></button>
+      </div>
+    </section>
+
+    <section class="products section" id="products" aria-labelledby="productsTitle">
+      <div class="product-line" aria-hidden="true"></div>
+      <div class="section-heading product-heading">
+        <div>
+          <span class="eyebrow"><i></i> G4 PRODUCT LINE</span>
+          <h2 id="productsTitle" class="thai-display">ครบทุกสูตร<br><em>เพื่อทุกความต้องการ</em></h2>
+        </div>
+        <div class="filters" role="group" aria-label="กรองผลิตภัณฑ์">
+          <button class="is-active" data-filter="all">ทั้งหมด</button>
+          <button data-filter="booster">Energy Booster</button>
+          <button data-filter="nutrition">Nutrition</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid"></div>
+    </section>
+
+    <section class="performance" id="performance">
+      <div class="performance-media">
+        <img src="assets/performance-main.webp" alt="การใช้ G4 Energy Booster ในการดูแลนกกรงหัวจุก" />
+        <div class="media-tag">PERFORMANCE / DAILY CARE</div>
+      </div>
+      <div class="performance-copy">
+        <span class="eyebrow dark"><i></i> BUILT FOR PERFORMANCE</span>
+        <h2 class="thai-display">ดูแลจากภายใน<br><em>ก่อนถึงวันจริง</em></h2>
+        <p>G4 แยกการใช้งานออกเป็นช่วงอย่างชัดเจน: สูตรเลี้ยงสำหรับดูแลเป็นประจำ, G4-X สำหรับเตรียมความพร้อมก่อนการแข่งขัน และอาหารนกสำหรับเป็นฐานโภชนาการ</p>
+        <div class="performance-points">
+          <div><b>01</b><span><strong>DAILY CONDITION</strong><small>สูตรเลี้ยง 15 / 50 ml สำหรับการดูแลประจำวัน</small></span></div>
+          <div><b>02</b><span><strong>COMPETITION READY</strong><small>G4-X 20 ml สำหรับช่วงก่อนการแข่งขัน</small></span></div>
+          <div><b>03</b><span><strong>NUTRITION BASE</strong><small>อาหารนกกรงหัวจุก 100 กรัม สำหรับพื้นฐานโภชนาการ</small></span></div>
+        </div>
+        <button class="btn black" data-scroll="#system">ดูวิธีเลือกใช้ →</button>
+      </div>
+    </section>
+
+    <section class="system" id="system" aria-labelledby="systemTitle">
+      <div class="system-visual" aria-hidden="true">
+        <img id="systemImage" src="assets/system-daily.webp" alt="" />
+        <div class="system-shade"></div>
+        <div class="system-count"><span id="systemCurrent">01</span><b>/ 04</b></div>
+      </div>
+      <div class="system-steps">
+        <header>
+          <span class="eyebrow"><i></i> THE G4 SYSTEM</span>
+          <h2 id="systemTitle" class="thai-display">เลือกให้ตรง<br><em>กับช่วงการใช้</em></h2>
+          <p>แยกตามเป้าหมายเพื่อให้เข้าใจง่าย และเห็นความแตกต่างของแต่ละผลิตภัณฑ์ในหน้าเดียว</p>
+        </header>
+
+        <article class="system-step is-active" data-image="assets/system-daily.webp" data-index="01">
+          <img class="mobile-step-img" src="assets/system-daily.webp" alt="G4 สูตรเลี้ยงสำหรับดูแลประจำวัน" />
+          <span>01 / DAILY CARE</span><h3 class="thai-display">ดูแลประจำวัน</h3>
+          <p>G4 สูตรเลี้ยงมีทั้ง 15 ml สำหรับเริ่มทดลอง และ 50 ml สำหรับการใช้งานต่อเนื่อง โดยข้อมูลจากสื่อแบรนด์ระบุวิธีใช้ 10 หยดต่อน้ำครึ่งถ้วยเล็กในช่วงเช้า</p>
+          <div class="step-actions"><button data-add="g4-15">15 ml / 190.-</button><button data-add="g4-50">50 ml / 490.-</button></div>
+        </article>
+
+        <article class="system-step" data-image="assets/system-competition.webp" data-index="02">
+          <img class="mobile-step-img" src="assets/system-competition.webp" alt="G4-X สำหรับช่วงก่อนการแข่งขัน" />
+          <span>02 / COMPETITION</span><h3 class="thai-display">ก่อนการแข่งขัน</h3>
+          <p>G4-X 20 ml ถูกวางตำแหน่งเป็นสูตรก่อนการแข่งขัน โดยสื่อแบรนด์ระบุ 10 หยดในน้ำครึ่งถ้วย และใช้ก่อนแข่งขันประมาณ 30 นาที</p>
+          <div class="step-actions"><button data-add="g4x-20">G4-X 20 ml / 590.-</button></div>
+        </article>
+
+        <article class="system-step" data-image="assets/system-nutrition.webp" data-index="03">
+          <img class="mobile-step-img" src="assets/system-nutrition.webp" alt="อาหารนกกรงหัวจุก สูตรนกแข่ง" />
+          <span>03 / NUTRITION</span><h3 class="thai-display">พื้นฐานต้องมาก่อน</h3>
+          <p>อาหารนกกรงหัวจุก สูตรนกแข่ง บรรจุ 100 กรัม เน้นเม็ดขนาดเล็กกินง่ายและเป็นส่วนหนึ่งของพื้นฐานโภชนาการสำหรับนก</p>
+          <div class="step-actions"><button data-add="food-100">เพิ่มสินค้าเพื่อสอบถามราคา →</button></div>
+        </article>
+
+        <article class="system-step" data-image="assets/system-range.webp" data-index="04">
+          <img class="mobile-step-img" src="assets/system-range.webp" alt="ผลิตภัณฑ์ G4 Thailand ทั้งระบบ" />
+          <span>04 / COMPLETE RANGE</span><h3 class="thai-display">ครบในระบบเดียว</h3>
+          <p>เลือกสูตร เปรียบเทียบสินค้า เพิ่มลงตะกร้า และสร้างออเดอร์เพื่อส่งต่อเข้า LINE Official ของ G4 Thailand ได้จากหน้าเดียว</p>
+          <strong class="system-signoff">G4 THAILAND — PERFORMANCE SERIES</strong>
+        </article>
+      </div>
+    </section>
+
+    <section class="gallery section" id="gallery" aria-labelledby="galleryTitle">
+      <div class="section-heading split">
+        <div><span class="eyebrow dark"><i></i> G4 IN ACTION</span><h2 id="galleryTitle" class="thai-display">จากการดูแล<br><em>สู่ความพร้อม</em></h2></div>
+        <p>ภาพใช้งานถูกออกแบบใหม่ให้เป็นส่วนหนึ่งของเว็บไซต์โดยตรง ไม่มีข้อความโปสเตอร์ทับภาพ เพื่อให้หน้าเว็บดูสะอาดและเป็นแบรนด์เดียวกันทั้งระบบ</p>
+      </div>
+      <div class="gallery-grid">
+        <figure class="gallery-main"><img src="assets/gallery-performance.webp" alt="G4 Thailand ในบรรยากาศการดูแลนก" /><figcaption>G4 IN ACTION / PERFORMANCE</figcaption></figure>
+        <figure><img src="assets/gallery-daily.webp" alt="หยด G4 ลงในน้ำสำหรับการดูแลประจำวัน" /><figcaption>DAILY CONDITION</figcaption></figure>
+        <figure><img src="assets/gallery-nutrition.webp" alt="อาหารนกกรงหัวจุกและเม็ดอาหาร" /><figcaption>NUTRITION BASE</figcaption></figure>
+      </div>
+    </section>
+
+    <section class="final-cta">
+      <div class="cta-mark">G4</div>
+      <div>
+        <span>READY TO ORDER?</span>
+        <h2 class="thai-display">เลือกสินค้า<br>แล้วส่งออเดอร์เข้า LINE</h2>
+        <p>ค่าจัดส่ง 30 บาทต่อออเดอร์ ตามข้อมูลที่แบรนด์ให้มา</p>
+      </div>
+      <button class="btn red" id="openCartBottom">เปิดตะกร้า <b>→</b></button>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-brand"><strong>G4 THAILAND</strong><span>ENERGY BOOSTER</span></div>
+    <div><small>FACEBOOK</small><b>G4 Thailand</b></div>
+    <div><small>LINE OFFICIAL</small><b>@g4thailand</b></div>
+    <div class="footer-note">ข้อมูลการใช้และคุณสมบัติอ้างอิงจากสื่อที่แบรนด์ส่งให้สำหรับ Draft นี้</div>
+  </footer>
+
+  <button class="mobile-cart" id="mobileCart" aria-label="เปิดตะกร้า"><span>ตะกร้า <b id="cartCountMobile">0</b></span><strong id="cartTotalMobile">0.-</strong></button>
+
+  <div class="drawer-backdrop" id="drawerBackdrop"></div>
+  <aside class="cart-drawer" id="cartDrawer" aria-hidden="true">
+    <div class="cart-head"><div><span>YOUR ORDER</span><h2>G4 Thailand</h2></div><button id="closeCart" aria-label="ปิดตะกร้า">×</button></div>
+    <div class="cart-items" id="cartItems"></div>
+    <div class="cart-empty" id="cartEmpty"><strong>G4</strong><span>ยังไม่มีสินค้าในตะกร้า</span><small>เลือกสินค้าแล้วกด “เพิ่มลงตะกร้า”</small></div>
+    <label class="cart-note">หมายเหตุถึงร้าน<textarea id="orderNote" placeholder="เช่น ชื่อผู้รับ / เบอร์โทร / รายละเอียดเพิ่มเติม"></textarea></label>
+    <div class="cart-summary">
+      <div><span>สินค้า</span><b id="summaryQty">0 รายการ</b></div>
+      <div><span>ยอดสินค้าที่มีราคา</span><b id="summarySubtotal">0.-</b></div>
+      <div><span>ค่าจัดส่ง</span><b id="summaryShipping">0.-</b></div>
+      <div class="total-row"><span>รวมเบื้องต้น</span><strong id="summaryTotal">0.-</strong></div>
+      <small class="quote-note" id="quoteNote" hidden>* มีสินค้าที่ต้องสอบถามราคาเพิ่มเติม</small>
+    </div>
+    <div class="cart-actions"><button id="copyOrder">คัดลอกออเดอร์</button><button class="line-order" id="lineOrder">ส่งเข้า LINE OA →</button></div>
+    <small class="cart-hint">ระบบจะสร้างข้อความออเดอร์พร้อมรายการ และเปิด LINE Official @g4thailand</small>
+  </aside>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
